@@ -19,18 +19,14 @@ public class Main {
         animals.add(fish);
         animals.add(duck);
 
-        System.out.println("Animals that can swim:");
-        for (animal ani : animals) {
-            if (ani.isCan_Swim()) {
-                System.out.println(ani);
-            }
-        }
-
-        System.out.println("\nAnimals that can walk:");
-        for (animal ani : animals) {
-            if (ani.isCan_Walk()) {
-                System.out.println(ani);
-            }
+        for (animal a : animals) {
+            if (a instanceof pig) {
+                System.out.println(a + " is a pig");
+            } else if (a instanceof duck) {
+                System.out.println(a + " is a duck");
+            } else if (a instanceof fish)
+                System.out.println(a + " is a fish");
         }
     }
 }
+

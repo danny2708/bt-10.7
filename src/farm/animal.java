@@ -36,6 +36,6 @@ public class animal {
 
     @Override
     public String toString() {
-        return "Name: " + name + ", Can Swim: " + can_Swim + ", Can Walk: " + can_Walk;
+        return name;
     }
 }
